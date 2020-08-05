@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActyvity.ActiVity.ChatsActivity">
+   <include layout="@layout/appbar_dong_chat" android:id="@+id/toobarchat">
+
+   </include>
+  <LinearLayout
+      android:weightSum="5"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+         <LinearLayout
+             android:weightSum="2"
+             android:orientation="horizontal"
+             android:layout_weight="4"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:layout_weight="2"
+                 android:id="@+id/SwipeRefreshLayoutchat"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                 <androidx.recyclerview.widget.RecyclerView
+
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/recyclerViewChat">
+
+                 </androidx.recyclerview.widget.RecyclerView>
+             </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+             <ImageView
+                 android:src="@drawable/icon_dangnhap"
+                 android:layout_weight="3"
+                 android:layout_width="20dp"
+                 android:layout_height="20dp">
+
+             </ImageView>
+         </LinearLayout>
+
+
+          <LinearLayout
+              android:layout_weight="1"
+              android:layout_alignParentBottom="true"
+              android:weightSum="4"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="70dp">
+
+              <ImageButton
+                  android:background="@android:color/transparent"
+                  android:id="@+id/buttonimagechat"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_weight="0.5"
+                  android:src="@android:drawable/ic_menu_gallery">
+
+              </ImageButton>
+              <EditText
+                  android:padding="5dp"
+                  android:hint="Nhập tin nhắn"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_gravity="center"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                   android:background="@drawable/custom_tex"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  android:layout_weight="3"
+                  android:inputType="text"
+                  android:ems="10"
+                  android:id="@+id/editTexChat"
+                  android:layout_width="200dp"
+                  android:layout_height="35dp">
+
+              </EditText>
+              <ImageButton
+                 android:layout_marginRight="10dp"
+                  android:layout_gravity="center"
+                  android:background="@android:color/transparent"
+                  android:scaleType="fitXY"
+                  android:src="@drawable/send"
+                  android:layout_weight="0.5"
+                  android:layout_width="28dp"
+                  android:layout_height="25dp"
+                  android:text="gui"
+                  android:id="@+id/buttonGuichat">
+
+              </ImageButton>
+          </LinearLayout>
+  </LinearLayout>
+
+</LinearLayout>

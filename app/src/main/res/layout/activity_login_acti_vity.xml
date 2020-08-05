@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/backroundangnhap"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActyvity.ActiVity.LoginActiVity">
+
+  <TextView
+
+      android:textSize="20sp"
+      android:text="Chào mừng bạn đến với App Nhắn tin"
+      android:textStyle="bold"
+      android:textColor="#fff"
+      android:layout_marginTop="50dp"
+      android:id="@+id/texchao"
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+  </TextView>
+
+    <EditText
+
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/texchao"
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:hint="Password"
+        android:layout_below="@id/editTextTextPersonName2"
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+  <LinearLayout
+      android:id="@+id/li"
+     android:weightSum="3"
+      android:layout_marginTop="20dp"
+      android:layout_below="@id/editTextTextPassword2"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_gravity="right"
+        android:gravity="right"
+       android:layout_weight="1.5"
+        android:textColor="#fff"
+        android:text="Bạn chưa có tài khoản?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:layout_weight="1.5"
+        android:layout_gravity="center"
+        android:textColor="#FA0808"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:id="@+id/buttonSignLogin">
+
+    </TextView>
+
+
+  </LinearLayout>
+    <Button
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/backround_button"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/li"
+        android:id="@+id/buttonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đăng Nhập" />
+
+
+
+</RelativeLayout>

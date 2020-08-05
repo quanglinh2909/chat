@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_caidat"
+        android:title="chỉnh sửa trang cá nhân" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="Search"/>
+    <item
+        android:id="@+id/menu_allUser"
+        android:title="Tất cả tài khoản" />
+    <item
+        android:id="@+id/menu_dangxuat"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Đăng Xuất" />
+</menu>

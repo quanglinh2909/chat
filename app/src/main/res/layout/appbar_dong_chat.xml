@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+   <LinearLayout
+
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.cardview.widget.CardView
+           android:layout_gravity="center"
+           android:id="@+id/cade"
+           app:cardCornerRadius="100dp"
+           android:layout_width="45dp"
+           android:layout_height="45dp">
+           <ImageView
+               android:src="@drawable/icon_dangnhap"
+               android:id="@+id/imagedongchat"
+               android:layout_width="45dp"
+               android:layout_height="45dp">
+           </ImageView>
+
+
+       </androidx.cardview.widget.CardView>
+       <LinearLayout
+          android:orientation="vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent">
+           <TextView
+               android:id="@+id/textdongchattrenten"
+               android:layout_marginLeft="20dp"
+               android:textSize="18sp"
+               android:text="Linh"
+               android:textStyle="bold"
+               android:textColor="#ffff"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </TextView>
+           <TextView
+               android:id="@+id/texdongchattrentime"
+               android:layout_marginLeft="20dp"
+               android:text="hoạt động 10 giờ trước"
+               android:ellipsize="end"
+               android:maxLines="1"
+               android:textColor="#ffff"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content">
+
+           </TextView>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>

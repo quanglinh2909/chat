@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActyvity.ActiVity.MainActivity">
+<include layout="@layout/apbar_layout" android:id="@+id/to"> </include>
+
+     <FrameLayout
+         android:id="@+id/fra"
+         android:layout_below="@id/to"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:layout_marginBottom="100dp"
+            android:id="@+id/viewpagermain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginBottom="100dp"
+            android:id="@+id/recylerViewmainactivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+     </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/taplayoutmain"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="80dp">
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActyvity.ActiVity.ProfileActivity">
+    <ImageView
+
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_profi"
+        android:id="@+id/imageprofile"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </ImageView>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:text="Name"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:id="@+id/textprofileten">
+
+</TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="trang thai"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textprofilestatus">
+
+    </TextView>
+    <Button
+        android:id="@+id/buttonketban"
+        android:text="gửi lời mời kết bạn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center">
+
+    </Button>
+    <Button
+        android:id="@+id/buttonhuyketban"
+        android:text="Hủy kết bạn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+    </Button>
+
+</LinearLayout>

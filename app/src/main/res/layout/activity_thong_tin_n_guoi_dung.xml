@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActyvity.ActiVity.ProfileActivity">
+    <ImageView
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_dangnhap"
+        android:id="@+id/imagehinhthongtinnguoidung"
+        android:layout_width="350dp"
+        android:layout_height="350dp">
+
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Name"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/texttennuoidung">
+
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="trang thai"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/texttrangthainguoidung">
+
+    </TextView>
+    <Button
+        android:id="@+id/buttonketbannguoidung"
+        android:text="gửi lời mời kết bạn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center">
+
+    </Button>
+    <Button
+        android:id="@+id/buttonxoayeucau"
+        android:text="không chấp nhân"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+    </Button>
+
+
+</LinearLayout>

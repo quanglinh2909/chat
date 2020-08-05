@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/cf0fe49424ce9640325545d91228"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActyvity.ActiVity.SignUpActivity">
+  <TextView
+      android:id="@+id/txx"
+      android:text="Đăng Ký Tài Khoản"
+      android:textColor="#0825E3"
+      android:layout_width="match_parent"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:gravity="center"
+      android:layout_marginTop="100dp"
+      android:layout_height="wrap_content">
+
+  </TextView>
+    <EditText
+        android:textColor="#fff"
+        android:textColorHint="#CD0808"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/txx"
+        android:layout_marginTop="60dp"
+        android:hint="UsseName"
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:textColor="#fff"
+        android:textColorHint="#DF1313"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:hint="Email"
+        android:layout_below="@id/editTextTextPersonName"
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:textColor="#fff"
+        android:textColorHint="#D11313"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="PassWord"
+        android:layout_below="@id/editTextTextEmailAddress"
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+    <Button
+        android:textColor="#fff"
+        android:background="@drawable/cubak"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPassword"
+        android:text="Đăng ký"
+        android:id="@+id/buttonsignup">
+
+    </Button>
+</RelativeLayout>
